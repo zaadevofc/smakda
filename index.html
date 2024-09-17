@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-lvh w-full gap-5 flex flex-col justify-center items-center">
+
+  <div class="text-3xl font-bold"></div>
+
+  <button id="btn" class="px-4 py-1 border rounded-lg bg-yellow-500">Klik Disini</button>
+
+  <div class="px-4 py-1 border rounded-lg bg-pink-500">
+    nomor nya : <span id="nomor"></span>
+  </div>
+
+  <script>
+    const btn = document.getElementById('btn')
+    const nomor = document.getElementById('nomor')
+
+    function togelGenarate() {
+      return Math.floor(Math.random() * 9000) + 1000;
+    }
+
+    btn.addEventListener('click', () => {
+      const hasil = togelGenarate()
+      nomor.innerText = hasil
+    })
+  </script>
+</body>
+
+</html>

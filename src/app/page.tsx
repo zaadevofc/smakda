@@ -1,101 +1,117 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { Button } from '@/components/ui/button'
+import { CDN_URI } from '@/lib/utils'
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
+
+const HomePage = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <>
+      <main className='min-w-full w-full h-full h-vh mx-auto'>
+        <nav className='fixed inset-x-0 mx-auto top-0 z-50 bg-white/80 backdrop-blur-xl w-full border-b border-gray-300 px-6 py-4'>
+          <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
+            <div className='flex items-center gap-1'>
+              <img src="/logo-smk.png" alt="" className='size-10' />
+              <h1 className='font-extrabold text-xl'>SMKN 2 SUKOHARJO</h1>
+            </div>
+            <div className='flex gap-5 mx-auto'>
+              <h1>Beranda</h1>
+              <h1>Profil</h1>
+              <h1>Jurusan</h1>
+              <h1>Program</h1>
+              <h1>Manajemen</h1>
+              <h1>Ekstrakurikuler</h1>
+              <h1>Informasi</h1>
+            </div>
+            <div className='flex gap-3 ml-auto'>
+              <Button>Masuk</Button>
+            </div>
+          </div>
+        </nav>
+        <ParallaxBanner
+          layers={[
+            { image: '/banner/smakda-4.webp', speed: -20 },
+          ]}
+          className="aspect-[2/1]"
+        >
+          <div className="absolute inset-0 flex items-center justify-center">
+            <h1 className="text-8xl text-white font-thin">Hello World!</h1>
+          </div>
+        </ParallaxBanner>
+        <section className='w-full fixed inset-x-0 -z-10 mx-auto'>
+          <div className='max-w-screen-2xl w-full flex flex-col mx-auto py-5s'>
+            <div className="relative w-full overflow-hidden max-h-[500px]">
+              <div className="absolute flex inset-0 bg-gradient-to-r from-white/0 via-transparent to-white/0">
+              </div>
+              <div className="absolute flex inset-0 bg-gradient-to-t from-white via-transparent">
+              </div>
+              <video controls={false} autoPlay loop muted preload="metadata" className="aspect-video w-full">
+                {/* <source src={CDN_URI("/showcase/adiwiyata-smakda.webm")} type="video/webm" /> */}
+                <source src={CDN_URI("/showcase/adiwiyata-smakda-cut-muted.mp4")} type="video/mp4" />
+                Maaf, browser Anda tidak mendukung tag video HTML5.
+              </video>
+            </div>
+          </div>
+        </section>
+        <section className='w-full border-b grid mb-[2000px] grid-cols-[repeat(auto-fit,minmax(200px,1fr))] bg-white'>
+          <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
+            <div className="w-full mx-auto p-8">
+              <div className='flex justify-between w-full flex-row-reverse'>
+                <h1 className='text-3xl font-black text-right'>CIPTAKAN GENERASI EMAS<br />BERSAMA SMKN 2 SUKOHARJO</h1>
+                <div className="flex flex-col md:flex-row gap-20 justify-center items-start md:items-center">
+                  <div className="mb-8 md:mb-0 border p-10">
+                    <h2 className="text-xl font-bold mb-4">HUBUNGI KAMI:</h2>
+                    <div className="flex space-x-6">
+                      <img src="https://g-te-ajuvb5fj.vusercontent.net/placeholder.svg?height=40&width=40" alt="Spotify" width={40} height={40} />
+                      <img src="https://g-te-ajuvb5fj.vusercontent.net/placeholder.svg?height=40&width=40" alt="Google Podcasts" width={40} height={40} />
+                      <img src="https://g-te-ajuvb5fj.vusercontent.net/placeholder.svg?height=40&width=40" alt="YouTube" width={40} height={40} />
+                      <img src="https://g-te-ajuvb5fj.vusercontent.net/placeholder.svg?height=40&width=40" alt="Apple Podcasts" width={40} height={40} />
+                    </div>
+                    <div className="flex mt-2 space-x-6 text-sm text-gray-600">
+                      <span>Spotify</span>
+                      <span>G-podcast</span>
+                      <span>Youtube</span>
+                      <span>Podcast</span>
+                    </div>
+                  </div>
+                  <div className='flex flex-col gap-10'>
+                    <div className="flex space-x-8">
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">2K+</h3>
+                        <p className="text-sm text-gray-600">SISWA</p>
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">400+</h3>
+                        <p className="text-sm text-gray-600">GURU</p>
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">40+</h3>
+                        <p className="text-sm text-gray-600">PROGRAM</p>
+                      </div>
+                    </div>
+                    <div className="flex space-x-8">
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">2K+</h3>
+                        <p className="text-sm text-gray-600">SISWA</p>
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">400+</h3>
+                        <p className="text-sm text-gray-600">GURU</p>
+                      </div>
+                      <div className="text-center">
+                        <h3 className="text-4xl font-bold">40+</h3>
+                        <p className="text-sm text-gray-600">PROGRAM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    </>
+  )
 }
+
+export default HomePage

@@ -1,0 +1,11 @@
+FROM node:22
+
+WORKDIR /app
+
+COPY package* .
+
+RUN npm i
+
+COPY . .
+
+CMD ["npm", "start"]
