@@ -5,7 +5,7 @@ import { CDN_URI } from '@/lib/utils'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
 import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
-
+//
 const HomePage = () => {
   return (
     <>
