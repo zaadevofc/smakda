@@ -255,7 +255,7 @@ const HomePage = () => {
 
             <main>
 
-              <section className="mb-16 flex flex-col mx-12">
+              <section className="mb-16 flex flex-col mx-12"> 
                 <div className="text-[90px] font-bold ">
                   <h1>
                     Make Your Financial
