@@ -117,10 +117,9 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
         </section>
 
-        <section className="py-20 text-center">
+        <section className="py-32 text-center">
           <h1 className="text-6xl font-bold mb-4 uppercase">
             cahaya kehidupan
             <br />
@@ -152,7 +151,8 @@ const HomePage = () => {
             </a>
           </div>
         </section>
-        <section className='flex flex-col mx-6 py-20'>
+
+        <section className='flex flex-col py-20 max-w-screen-2xl w-full mx-auto'>
           <div className="flex justify-between">
             <h2 className="text-7xl font-bold h-44 w-full">FEATURES</h2>
             <div className="flex">
@@ -226,7 +226,8 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className='py-20 flex flex-col mx-6'>
+
+        <section className='py-20 flex flex-col max-w-screen-2xl w-full mx-auto'>
           <div className="pb-20">
             <h4 className="w-full text-center text-8xl">Our Works</h4>
           </div>
@@ -239,20 +240,9 @@ const HomePage = () => {
             <img className="rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Txr-rpW-8kRSLWUe8gkR_h_0MUaQFHGrNQ&s" alt="" />
           </div>
         </section>
-        <section>
-          <div className="bg-gray-900 text-white min-h-screen p-8">
-            <header className="mb-12">
-              <nav className="flex justify-between items-center">
-                <h1 className="text-2xl font-bold">theClose</h1>
-                <div className="space-x-4">
-                  <a href="#" className="hover:text-green-400">Home</a>
-                  <a href="#" className="hover:text-green-400">About</a>
-                  <a href="#" className="hover:text-green-400">Services</a>
-                  <a href="#" className="hover:text-green-400">Contact</a>
-                </div>
-              </nav>
-            </header>
 
+        <section className='bg-gray-900 text-white min-h-screen'>
+          <div className="p-20 max-w-screen-2xl w-full mx-auto">
             <main>
 
               <section className="mb-16 flex flex-col mx-12">
@@ -271,19 +261,19 @@ const HomePage = () => {
                       </div>
                       <div className="flex my-10 ">
                         <div className="w-[50%] flex">
-                        <div className='text-gray-400 w-fit text-left border-2 rounded-xl flex gap-5 border-gray-400 text-3xl px-2 py-1 h-fit'>
-                          <h1>
-                          get started
-                          </h1>
-                        <h1 className='text-white'>
-                          /\
-                        </h1>
-                        </div>
+                          <div className='text-gray-400 w-fit text-left border-2 rounded-xl flex gap-5 border-gray-400 text-3xl px-2 py-1 h-fit'>
+                            <h1>
+                              get started
+                            </h1>
+                            <h1 className='text-white'>
+                              /\
+                            </h1>
+                          </div>
                         </div>
                         <div className="w-[50%]">
-                        <h1 className='pl-2 w-52 text-left text-sm text-gray-400'>
-                        adipisicing elit adipisicing elit. Veritatis, tempora fugit expedita 
-                        </h1>
+                          <h1 className='pl-2 w-52 text-left text-sm text-gray-400'>
+                            adipisicing elit adipisicing elit. Veritatis, tempora fugit expedita
+                          </h1>
                         </div>
                       </div>
                     </div>
@@ -380,7 +370,7 @@ const HomePage = () => {
 
             <footer className="text-center text-gray-400">
               <p>&copy; 2023 theClose. All rights reserved.</p>
-            </footer>    
+            </footer>
           </div>
         </section>
       </main>
