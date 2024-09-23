@@ -66,7 +66,7 @@ const HomePage = () => {
           <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
             <div className="w-full mx-auto p-8">
               <div className='flex justify-between w-full flex-row-reverse'>
-                <h1 className='text-3xl font-black text-right max-w-md'>CIPTAKAN GENERASI EMAS BERSAMA SMKN 2 SUKOHARJO</h1>
+                <h1 className='text-3xl font-black text-right max-w-md'>CIPTAKAN ZAHRAN DEVELOPER BERSAMA SMKN 2 SUKOHARJO</h1>
                 <div className="flex flex-col md:flex-row gap-20 justify-center items-start md:items-center">
                   <div className="mb-8 md:mb-0 border p-10">
                     <h2 className="text-xl font-bold mb-4">HUBUNGI KAMI:</h2>
