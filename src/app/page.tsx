@@ -3,6 +3,8 @@
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
+import Image from 'next/image'
+import { ArrowUpRight } from 'lucide-react'
 
 const HomePage = () => {
   return (
@@ -152,7 +154,7 @@ const HomePage = () => {
         </section>
         <section className='flex flex-col mx-6 py-20'>
           <div className="flex justify-between">
-            <h2 className="text-8xl font-bold h-44 w-full">FEATURES</h2>
+            <h2 className="text-7xl font-bold h-44 w-full">FEATURES</h2>
             <div className="flex">
               <div className="bg-[#eeebeb] w-[273px] h-[273px] px-5 py-5 flex flex-col justify-between">
                 <div className="bg-red-600 w-10 h-10 mt-2 ml-2 rounded-full flex items-center justify-center mb-4">
@@ -224,18 +226,162 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className='py-20 flex flex-col'>
-        <div className="pb-20">
-                <h4 className="w-full text-center text-8xl">Our Works</h4>
+        <section className='py-20 flex flex-col mx-6'>
+          <div className="pb-20">
+            <h4 className="w-full text-center text-8xl">Our Works</h4>
+          </div>
+          <div className="flex flex-col gap-6">
+            <img className="rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Txr-rpW-8kRSLWUe8gkR_h_0MUaQFHGrNQ&s" alt="" />
+            <div className="gap-6 flex">
+              <img className="rounded-3xl" width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkVy4wUpcaWXKS_38R60zcPbPbMhIAUv6qQ&s" alt="" />
+              <img className="rounded-3xl" width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkVy4wUpcaWXKS_38R60zcPbPbMhIAUv6qQ&s" alt="" />
             </div>
-            <div className="flex flex-col gap-6">
-                <img className="rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Txr-rpW-8kRSLWUe8gkR_h_0MUaQFHGrNQ&s" alt=""/>
-                <div className="gap-6 flex">
-                    <img className="rounded-3xl" width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkVy4wUpcaWXKS_38R60zcPbPbMhIAUv6qQ&s" alt=""/>
-                    <img className="rounded-3xl" width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpkVy4wUpcaWXKS_38R60zcPbPbMhIAUv6qQ&s" alt=""/>
+            <img className="rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Txr-rpW-8kRSLWUe8gkR_h_0MUaQFHGrNQ&s" alt="" />
+          </div>
+        </section>
+        <section>
+          <div className="bg-gray-900 text-white min-h-screen p-8">
+            <header className="mb-12">
+              <nav className="flex justify-between items-center">
+                <h1 className="text-2xl font-bold">theClose</h1>
+                <div className="space-x-4">
+                  <a href="#" className="hover:text-green-400">Home</a>
+                  <a href="#" className="hover:text-green-400">About</a>
+                  <a href="#" className="hover:text-green-400">Services</a>
+                  <a href="#" className="hover:text-green-400">Contact</a>
                 </div>
-                <img className="rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Txr-rpW-8kRSLWUe8gkR_h_0MUaQFHGrNQ&s" alt=""/>
-            </div>
+              </nav>
+            </header>
+
+            <main>
+
+              <section className="mb-16 flex flex-col mx-12">
+                <div className="text-[90px] font-bold ">
+                  <h1>
+                    Make Your Financial
+                  </h1>
+                </div>
+                <div className="flex-col">
+                  <div className="flex">
+                    <div className="flex-col w-[66%] ">
+                      <div className="text-[90px] font-bold mb-4">
+                        <h1>
+                          Goals Real
+                        </h1>
+                      </div>
+                      <div className="flex my-10 ">
+                        <div className="w-[50%] flex">
+                        <div className='text-gray-400 w-fit text-left border-2 rounded-xl flex gap-5 border-gray-400 text-3xl px-2 py-1 h-fit'>
+                          <h1>
+                          get started
+                          </h1>
+                        <h1 className='text-white'>
+                          /\
+                        </h1>
+                        </div>
+                        </div>
+                        <div className="w-[50%]">
+                        <h1 className='pl-2 w-52 text-left text-sm text-gray-400'>
+                        adipisicing elit adipisicing elit. Veritatis, tempora fugit expedita 
+                        </h1>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mb-10 flex flex-col w-[33%] gap-3 pl-4 pt-10 text-gray-400">
+                      <h1 className=''>Lorem ipsum  </h1>
+                      <h1 className=''>Lorem ipsum Lorem </h1>
+                      <h1 className=''>Lorem ipsum </h1>
+                      <h1 className=''>Lorem ipsum Lorem </h1>
+                    </div>
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="flex-col w-[33%] text-left">
+                      <h1 className='text-3xl font-bold'>
+                        $460 Tr
+                      </h1>
+                      <h1 className='text-gray-400'>
+                        Total Assets
+                      </h1>
+                    </div>
+                    <div className="flex-col w-[33%] text-left">
+                      <h1 className='text-3xl font-bold'>
+                        17,000+
+                      </h1>
+                      <h1 className='text-gray-400'>
+                        Clients We Serve
+                      </h1>
+                    </div>
+                    <div className="flex-col w-[33%] text-left">
+                      <h1 className='text-3xl font-bold'>
+                        $20,000
+                      </h1>
+                      <h1 className='text-gray-400'>
+                        Minimum Investment lorem
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section className="bg-green-400 text-black p-8 rounded-lg mb-16">
+                <h3 className="text-2xl font-bold mb-4">Calculate The Production Property We Can Do.</h3>
+                <button className="bg-black text-white px-6 py-2 rounded-full">Calculate Now</button>
+              </section>
+
+              <section className="mb-16">
+                <h3 className="text-2xl font-bold mb-4">Become The Trust Of Users In The World.</h3>
+                <div className="grid grid-cols-3 gap-8">
+                  <div className="bg-gray-800 p-6 rounded-lg">
+                    <h4 className="font-bold mb-2">Trusted</h4>
+                    <p className="text-gray-400">Lorem ipsum dolor sit amet</p>
+                  </div>
+                  <div className="bg-gray-800 p-6 rounded-lg">
+                    <h4 className="font-bold mb-2">Secure</h4>
+                    <p className="text-gray-400">Consectetur adipiscing elit</p>
+                  </div>
+                  <div className="bg-gray-800 p-6 rounded-lg">
+                    <h4 className="font-bold mb-2">Reliable</h4>
+                    <p className="text-gray-400">Sed do eiusmod tempor</p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="mb-16">
+                <h3 className="text-2xl font-bold mb-4">Collaborating With Many Investors As Financiers.</h3>
+                <div className="flex items-center space-x-4">
+                  <Image src="/placeholder.svg" alt="Investor 1" width={50} height={50} className="rounded-full" />
+                  <Image src="/placeholder.svg" alt="Investor 2" width={50} height={50} className="rounded-full" />
+                  <Image src="/placeholder.svg" alt="Investor 3" width={50} height={50} className="rounded-full" />
+                  <Image src="/placeholder.svg" alt="Investor 4" width={50} height={50} className="rounded-full" />
+                  <div className="bg-green-400 text-black px-4 py-2 rounded-full">
+                    <p>4,000+ Ready With You</p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="mb-16 flex items-center space-x-8">
+                <div>
+                  <h3 className="text-2xl font-bold mb-4">Looking To Refinance.</h3>
+                  <div className="space-y-4">
+                    <button className="bg-gray-800 text-white px-6 py-2 rounded-full">Apply Now</button>
+                    <button className="bg-gray-800 text-white px-6 py-2 rounded-full">Learn More</button>
+                  </div>
+                </div>
+                <Image src="/placeholder.svg" alt="Refinance" width={300} height={300} className="rounded-full" />
+              </section>
+
+              <section className="bg-green-400 text-black p-8 rounded-lg mb-16 flex justify-between items-center">
+                <h3 className="text-2xl font-bold">Let's Discuss With Our Team</h3>
+                <button className="bg-black text-white p-2 rounded-full">
+                  <ArrowUpRight size={24} />
+                </button>
+              </section>
+            </main>
+
+            <footer className="text-center text-gray-400">
+              <p>&copy; 2023 theClose. All rights reserved.</p>
+            </footer>    
+          </div>
         </section>
       </main>
     </>
