@@ -5,7 +5,6 @@ import "./globals.css";
 import ProvidersWrapper from "./providers";
 import { cn } from "@/lib/utils";
 
-
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -21,7 +20,7 @@ const titan_one = Titan_One({
   subsets: ['latin'],
   display: 'swap',
   variable: "--font-titan",
-  weight:['400']
+  weight: ['400']
 });
 
 const montserrat = Montserrat({

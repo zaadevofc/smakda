@@ -3,6 +3,7 @@
 import React from 'react'
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import 'animate.css';
 
 const lenis = {
   lerp: 0.1,

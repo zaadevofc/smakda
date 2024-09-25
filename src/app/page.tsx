@@ -12,9 +12,11 @@ const HomePage = () => {
       <main className='min-w-full w-full h-full h-vh mx-auto'>
         <nav className='fixed inset-x-0 mx-auto top-0 z-50 bg-white/80 backdrop-blur-xl w-full border-b border-gray-300 px-6 py-4'>
           <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
-            <div className='flex items-center gap-1'>
+            <div className='flex items-center gap-2'>
               <img src="/logo-smk.png" alt="" className='size-10' />
-              <h1 className='font-extrabold text-xl'>SMKN 2 SUKOHARJO</h1>
+              <div className='overflow-hidden pl-3 border-l border-black'>
+                <h1 className='font-extrabold text-xl animate__animated animate__slideInLeft animate__slow'>SMKN 2 SUKOHARJO</h1>
+              </div>
             </div>
             <div className='flex gap-5 mx-auto'>
               <h1>Beranda</h1>
@@ -34,9 +36,9 @@ const HomePage = () => {
           layers={[
             { image: '/banner/smakda-7.webp', speed: -20 },
           ]}
-          className="aspect-[2/1] object-top"
+          className="aspect-[2/1] object-top h-screen"
         >
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute bg-gradient-to-t to-transparent from-black/70 inset-0 flex items-center justify-center">
             <h1 className="text-6xl font-bold mb-4 uppercase text-center text-white">
               cahaya kehidupan
               <br />
@@ -267,7 +269,7 @@ const HomePage = () => {
           <div className="p-20 max-w-screen-2xl w-full mx-auto">
             <main>
 
-              <section className="mb-16 flex flex-col mx-12"> 
+              <section className="mb-16 flex flex-col mx-12">
                 <div className="text-[90px] font-bold ">
                   <h1>
                     Make Your Financial
@@ -396,6 +398,73 @@ const HomePage = () => {
               </section>
             </main>
           </div>
+        </section>
+
+        <section className="bg-gray-100 py-20">
+          <div className="container mx-auto p-4">
+            <h2 className="text-4xl font-bold text-center mb-10">Contact Us</h2>
+            <div className="flex flex-col md:flex-row justify-center items-center">
+              <div className="w-full md:w-1/2 p-4">
+                <p className="text-lg">
+                  Have any question? Feel free to contact us. We are always happy to help.
+                </p>
+                <p className="text-lg mt-4">
+                  Email: <a href="mailto:info@smkn2sukoharjo.sch.id" className="text-blue-600 hover:underline">info@smkn2sukoharjo.sch.id</a>
+                </p>
+                <p className="text-lg mt-4">
+                  Phone: <a href="tel:0271-876543" className="text-blue-600 hover:underline">0271-876543</a>
+                </p>
+                <p className="text-lg mt-4">
+                  Address: Jl. Raya Solo - Yogyakarta No. 12, Sukoharjo, Jawa Tengah
+                </p>
+              </div>
+              <div className="w-full md:w-1/2 p-4 mt-8 md:mt-0">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.546118645344!2d110.81324461484696!3d-7.666133794436393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f0ebf7c3a09%3A0x5c9f5b9d9c8b39f4!2sSMK%20Negeri%202%20Sukoharjo!5e0!3m2!1sen!2sid!4v1658570111411!5m2!1sen!2sid"
+                  width="100%"
+                  height="300"
+                  style={{ border: "0" }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        <section className="bg-white py-20">
+          <div className="container mx-auto p-4">
+            <h2 className="text-4xl font-bold text-center mb-10">Profile Kepala Sekolah</h2>
+            <div className="flex flex-col lg:flex-row items-center justify-center">
+              <div className="w-full lg:w-1/2 p-4">
+                <img src="/images/kasek.jpg" alt="Kepala Sekolah" className="rounded-full w-48 h-48 mb-8 mx-auto" />
+                <h3 className="text-2xl font-bold">Dr. H. Muhammad Hatta, S.Pd., M.Pd.</h3>
+                <p className="text-lg">Kepala Sekolah SMK Negeri 2 Sukoharjo</p>
+                <p className="text-lg mt-4">Pendidikan:</p>
+                <ul className="list-disc list-inside">
+                  <li>S1 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                  <li>S2 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                  <li>S3 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                </ul>
+                <p className="text-lg mt-4">Kontak:</p>
+                <ul className="list-disc list-inside">
+                  <li>Email: <a href="mailto:kasek@smkn2sukoharjo.sch.id" className="text-blue-600 hover:underline">kasek@smkn2sukoharjo.sch.id</a></li>
+                  <li>Phone: <a href="tel:085643212345" className="text-blue-600 hover:underline">085643212345</a></li>
+                </ul>
+              </div>
+              <div className="w-full lg:w-1/2 p-4">
+                <p className="text-lg">
+                  Dr. H. Muhammad Hatta, S.Pd., M.Pd. adalah seorang tokoh pendidikan yang sangat berpengalaman di bidangnya. Beliau memiliki pengalaman mengajar lebih dari 20 tahun dan pernah menjadi Kepala Sekolah di beberapa SMA dan SMK di Sukoharjo.
+                </p>
+                <p className="text-lg mt-4">
+                  Pendidikan yang diperoleh dari Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta telah membentuknya menjadi seorang yang sangat berwawasan luas dan berpengalaman di bidang pendidikan.
+                </p>
+                <p className="text-lg mt-4">
+                  Sebagai seorang Kepala Sekolah, beliau memiliki visi untuk meningkatkan kualitas pendidikan di SMK Negeri 2 Sukoharjo dengan mengembangkan kurikulum yang berbasis kebutuhan industri dan meningkatkan keterampilan siswa agar siap bekerja di dunia industri.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         </section>
       </main>
     </>
