@@ -267,7 +267,7 @@ const HomePage = () => {
           <div className="p-20 max-w-screen-2xl w-full mx-auto">
             <main>
 
-              <section className="mb-16 flex flex-col mx-12"> 
+              <section className="mb-16 flex flex-col mx-12">
                 <div className="text-[90px] font-bold ">
                   <h1>
                     Make Your Financial
@@ -397,8 +397,35 @@ const HomePage = () => {
             </main>
           </div>
         </section>
-        <section>
-
+        <section className='p-10 h-[calc(100vh-4rem)]'>
+          <div className="flex flex-col">
+            <div className="flex">
+              <h1 className='font-bold text-5xl'>Become The Trust Of Users In The World.</h1>
+              <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam reprehenderit accusamus .</h1>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col">
+                <div className="flex">
+                  <div className=""></div>
+                  <div className=""></div>
+                  <div className=""></div>
+                </div>
+                <div className="flex">
+                  <div className=""></div>
+                  <div className=""></div>
+                  <div className=""></div>
+                </div>
+              </div>
+              <h1></h1>
+            </div>
+            <div className="flex justify-between [&_div]:flex ">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
         </section>
       </main>
     </>
