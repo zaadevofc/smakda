@@ -399,8 +399,6 @@ const HomePage = () => {
             </main>
           </div>
         </section>
-<<<<<<< HEAD
-
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto p-4">
             <h2 className="text-4xl font-bold text-center mb-10">Contact Us</h2>
@@ -432,42 +430,41 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        <section className="bg-white py-20">
-          <div className="container mx-auto p-4">
-            <h2 className="text-4xl font-bold text-center mb-10">Profile Kepala Sekolah</h2>
-            <div className="flex flex-col lg:flex-row items-center justify-center">
-              <div className="w-full lg:w-1/2 p-4">
-                <img src="/images/kasek.jpg" alt="Kepala Sekolah" className="rounded-full w-48 h-48 mb-8 mx-auto" />
-                <h3 className="text-2xl font-bold">Dr. H. Muhammad Hatta, S.Pd., M.Pd.</h3>
-                <p className="text-lg">Kepala Sekolah SMK Negeri 2 Sukoharjo</p>
-                <p className="text-lg mt-4">Pendidikan:</p>
-                <ul className="list-disc list-inside">
-                  <li>S1 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
-                  <li>S2 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
-                  <li>S3 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
-                </ul>
-                <p className="text-lg mt-4">Kontak:</p>
-                <ul className="list-disc list-inside">
-                  <li>Email: <a href="mailto:kasek@smkn2sukoharjo.sch.id" className="text-blue-600 hover:underline">kasek@smkn2sukoharjo.sch.id</a></li>
-                  <li>Phone: <a href="tel:085643212345" className="text-blue-600 hover:underline">085643212345</a></li>
-                </ul>
-              </div>
-              <div className="w-full lg:w-1/2 p-4">
-                <p className="text-lg">
-                  Dr. H. Muhammad Hatta, S.Pd., M.Pd. adalah seorang tokoh pendidikan yang sangat berpengalaman di bidangnya. Beliau memiliki pengalaman mengajar lebih dari 20 tahun dan pernah menjadi Kepala Sekolah di beberapa SMA dan SMK di Sukoharjo.
-                </p>
-                <p className="text-lg mt-4">
-                  Pendidikan yang diperoleh dari Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta telah membentuknya menjadi seorang yang sangat berwawasan luas dan berpengalaman di bidang pendidikan.
-                </p>
-                <p className="text-lg mt-4">
-                  Sebagai seorang Kepala Sekolah, beliau memiliki visi untuk meningkatkan kualitas pendidikan di SMK Negeri 2 Sukoharjo dengan mengembangkan kurikulum yang berbasis kebutuhan industri dan meningkatkan keterampilan siswa agar siap bekerja di dunia industri.
-                </p>
+          <section className="bg-white py-20">
+            <div className="container mx-auto p-4">
+              <h2 className="text-4xl font-bold text-center mb-10">Profile Kepala Sekolah</h2>
+              <div className="flex flex-col lg:flex-row items-center justify-center">
+                <div className="w-full lg:w-1/2 p-4">
+                  <img src="/images/kasek.jpg" alt="Kepala Sekolah" className="rounded-full w-48 h-48 mb-8 mx-auto" />
+                  <h3 className="text-2xl font-bold">Dr. H. Muhammad Hatta, S.Pd., M.Pd.</h3>
+                  <p className="text-lg">Kepala Sekolah SMK Negeri 2 Sukoharjo</p>
+                  <p className="text-lg mt-4">Pendidikan:</p>
+                  <ul className="list-disc list-inside">
+                    <li>S1 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                    <li>S2 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                    <li>S3 Pendidikan Agama Islam Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta</li>
+                  </ul>
+                  <p className="text-lg mt-4">Kontak:</p>
+                  <ul className="list-disc list-inside">
+                    <li>Email: <a href="mailto:kasek@smkn2sukoharjo.sch.id" className="text-blue-600 hover:underline">kasek@smkn2sukoharjo.sch.id</a></li>
+                    <li>Phone: <a href="tel:085643212345" className="text-blue-600 hover:underline">085643212345</a></li>
+                  </ul>
+                </div>
+                <div className="w-full lg:w-1/2 p-4">
+                  <p className="text-lg">
+                    Dr. H. Muhammad Hatta, S.Pd., M.Pd. adalah seorang tokoh pendidikan yang sangat berpengalaman di bidangnya. Beliau memiliki pengalaman mengajar lebih dari 20 tahun dan pernah menjadi Kepala Sekolah di beberapa SMA dan SMK di Sukoharjo.
+                  </p>
+                  <p className="text-lg mt-4">
+                    Pendidikan yang diperoleh dari Universitas Islam Negeri (UIN) Sunan Kalijaga Yogyakarta telah membentuknya menjadi seorang yang sangat berwawasan luas dan berpengalaman di bidang pendidikan.
+                  </p>
+                  <p className="text-lg mt-4">
+                    Sebagai seorang Kepala Sekolah, beliau memiliki visi untuk meningkatkan kualitas pendidikan di SMK Negeri 2 Sukoharjo dengan mengembangkan kurikulum yang berbasis kebutuhan industri dan meningkatkan keterampilan siswa agar siap bekerja di dunia industri.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
-        </section>
-=======
         <section className='p-10 h-[calc(100vh-4rem)]'>
           <div className="flex flex-col">
             <div className="flex">
@@ -498,8 +495,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
->>>>>>> fa76f9f80d02c5a2387e00391452dc36c4bf79b1
-      </main>
+      </main >
     </>
   )
 }
