@@ -5,6 +5,7 @@ import "./globals.css";
 import ProvidersWrapper from "./providers";
 import { cn } from "@/lib/utils";
 
+
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -42,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(`antialiased font-[var(--font-titan)]`, montserrat.className, titan_one.variable, montserrat.variable)}
+        className={cn(`antialiased font-montser`, montserrat.className, titan_one.variable, montserrat.variable)}
       >
         <ProvidersWrapper>
           {children}

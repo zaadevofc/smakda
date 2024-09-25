@@ -178,6 +178,17 @@ const HomePage = () => {
                   <p className="text-gray-700 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatum </p>
                 </div>
               </div>
+              <div className=" w-[273px] bg-[#eeebeb]  h-[273px] px-5 py-5 flex flex-col justify-between">
+                <div className="bg-red-600 w-10 h-10 mt-2 ml-2 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div className="">
+                  <h3 className="text-xl font-bold mb-1">Lorem ipsum dolor</h3>
+                  <p className="text-gray-700 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatum </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -224,6 +235,17 @@ const HomePage = () => {
                 <p className="text-gray-700 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatum </p>
               </div>
             </div>
+            <div className="bg-white w-[273px] h-[273px] px-5 py-5 flex flex-col justify-between">
+              <div className="bg-red-600 w-10 h-10 mt-2 ml-2 rounded-full flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="">
+                <h3 className="text-xl font-bold mb-1">Lorem ipsum dolor</h3>
+                <p className="text-gray-700 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatum </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -241,11 +263,11 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className='bg-gray-900 text-white min-h-screen'>
+        <section className='bg-gradient-to-t from-[#4364AE] to-black text-white min-h-screen'>
           <div className="p-20 max-w-screen-2xl w-full mx-auto">
             <main>
 
-              <section className="mb-16 flex flex-col mx-12">
+              <section className="mb-16 flex flex-col mx-12"> 
                 <div className="text-[90px] font-bold ">
                   <h1>
                     Make Your Financial
@@ -312,65 +334,67 @@ const HomePage = () => {
                   </div>
                 </div>
               </section>
-
-              <section className="bg-green-400 text-black p-8 rounded-lg mb-16">
-                <h3 className="text-2xl font-bold mb-4">Calculate The Production Property We Can Do.</h3>
-                <button className="bg-black text-white px-6 py-2 rounded-full">Calculate Now</button>
-              </section>
-
-              <section className="mb-16">
-                <h3 className="text-2xl font-bold mb-4">Become The Trust Of Users In The World.</h3>
-                <div className="grid grid-cols-3 gap-8">
-                  <div className="bg-gray-800 p-6 rounded-lg">
-                    <h4 className="font-bold mb-2">Trusted</h4>
-                    <p className="text-gray-400">Lorem ipsum dolor sit amet</p>
+              <section>
+                <div className="flex flex-col">
+                  <div className="flex flex-col rounded-[50px] bg-lime-300">
+                    <div className="">
+                      <h1 className='text-black px-40 font-bold pt-20 text-center text-5xl'>
+                        Calculate The Production Property We Can Do.
+                      </h1>
+                    </div>
+                    <div className="flex justify-center w-full gap-10 my-20">
+                      <Button variant="outline" className="rounded-full text-xl bg-white text-black">Overview</Button>
+                      <Button variant="secondary" className="rounded-full text-xl bg-black text-white">Calculator</Button>
+                      <Button variant="outline" className="rounded-full text-xl bg-white text-black">History And Development</Button>
+                      <Button variant="outline" className="rounded-full text-xl bg-white text-black">Special Program</Button>
+                    </div>
                   </div>
-                  <div className="bg-gray-800 p-6 rounded-lg">
-                    <h4 className="font-bold mb-2">Secure</h4>
-                    <p className="text-gray-400">Consectetur adipiscing elit</p>
-                  </div>
-                  <div className="bg-gray-800 p-6 rounded-lg">
-                    <h4 className="font-bold mb-2">Reliable</h4>
-                    <p className="text-gray-400">Sed do eiusmod tempor</p>
+                  <div className="flex gap-5 text-black mt-5">
+                    <div className="flex-grow bg-white rounded-[50px] px-10 py-10">
+                      <div className="flex justify-between">
+                        <h2 className="text-3xl font-semibold mb-4">Calculator Simulation</h2>
+                        <div className=" mb-4 p-2 border-2 rounded-2xl border-black">
+                          Property Value  V
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-between">
+                          <input type="text" placeholder="m²" className=" bg-gray-100 w-[340px] mr-2 p-2 border rounded" />
+                          <input type="text" placeholder="Property Value" className=" bg-gray-100 w-[340px] p-2 border rounded" />
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <input type="text" placeholder="m²" className=" bg-gray-100 w-[340px] mr-2 p-2 border rounded" />
+                          <input type="text" placeholder="Property Value" className=" bg-gray-100 w-[340px] p-2 border rounded" />
+                        </div>
+                        <div className="flex w-full justify-between">
+                          <input type="text" placeholder="m²" className=" bg-gray-100 w-[340px] mr-2 p-2 border rounded" />
+                          <div className="mt-4 w-[340px]">
+                            <div className="flex justify-between items-center">
+                              <span>Total Value</span>
+                              <span>$ 7000</span>
+                            </div>
+                            <div className="w-full bg-gray-200 rounded-full h-2.5 mt-2">
+                              <div className="bg-lime-300 h-2.5 rounded-full w-3/4"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="w-1/3 bg-white rounded-[50px] p-10 ">
+                      <h2 className="text-3xl font-semibold mb-8">Bid For Data Results</h2>
+                      <div className="bg-gray-100 p-2 rounded-xl mb-8">
+                        <p className="text-3xl font-bold">$1,600<span className="text-sm font-normal">/Month</span></p>
+                      </div>
+                      <button className="w-full bg-black text-white text-3xl p-2 rounded-xl">
+                        $1,200<span className="text-sm">/Month</span>
+                      </button>
+                      <p className="text-sm text-center mt-2">Payment includes Tax 0%</p>
+                    </div>
                   </div>
                 </div>
-              </section>
-
-              <section className="mb-16">
-                <h3 className="text-2xl font-bold mb-4">Collaborating With Many Investors As Financiers.</h3>
-                <div className="flex items-center space-x-4">
-                  <Image src="/placeholder.svg" alt="Investor 1" width={50} height={50} className="rounded-full" />
-                  <Image src="/placeholder.svg" alt="Investor 2" width={50} height={50} className="rounded-full" />
-                  <Image src="/placeholder.svg" alt="Investor 3" width={50} height={50} className="rounded-full" />
-                  <Image src="/placeholder.svg" alt="Investor 4" width={50} height={50} className="rounded-full" />
-                  <div className="bg-green-400 text-black px-4 py-2 rounded-full">
-                    <p>4,000+ Ready With You</p>
-                  </div>
-                </div>
-              </section>
-
-              <section className="mb-16 flex items-center space-x-8">
-                <div>
-                  <h3 className="text-2xl font-bold mb-4">Looking To Refinance.</h3>
-                  <div className="space-y-4">
-                    <button className="bg-gray-800 text-white px-6 py-2 rounded-full">Apply Now</button>
-                    <button className="bg-gray-800 text-white px-6 py-2 rounded-full">Learn More</button>
-                  </div>
-                </div>
-                <Image src="/placeholder.svg" alt="Refinance" width={300} height={300} className="rounded-full" />
-              </section>
-
-              <section className="bg-green-400 text-black p-8 rounded-lg mb-16 flex justify-between items-center">
-                <h3 className="text-2xl font-bold">Let's Discuss With Our Team</h3>
-                <button className="bg-black text-white p-2 rounded-full">
-                  <ArrowUpRight size={24} />
-                </button>
               </section>
             </main>
-
-            <footer className="text-center text-gray-400">
-              <p>&copy; 2023 theClose. All rights reserved.</p>
-            </footer>
           </div>
         </section>
       </main>
