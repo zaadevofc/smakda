@@ -396,6 +396,9 @@ const HomePage = () => {
             </main>
           </div>
         </section>
+        <section>
+
+        </section>
       </main>
     </>
   )
