@@ -399,6 +399,7 @@ const HomePage = () => {
             </main>
           </div>
         </section>
+<<<<<<< HEAD
 
         <section className="bg-gray-100 py-20">
           <div className="container mx-auto p-4">
@@ -466,6 +467,38 @@ const HomePage = () => {
           </div>
         </section>
         </section>
+=======
+        <section className='p-10 h-[calc(100vh-4rem)]'>
+          <div className="flex flex-col">
+            <div className="flex">
+              <h1 className='font-bold text-5xl'>Become The Trust Of Users In The World.</h1>
+              <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam reprehenderit accusamus .</h1>
+            </div>
+            <div className="flex">
+              <div className="flex flex-col">
+                <div className="flex">
+                  <div className=""></div>
+                  <div className=""></div>
+                  <div className=""></div>
+                </div>
+                <div className="flex">
+                  <div className=""></div>
+                  <div className=""></div>
+                  <div className=""></div>
+                </div>
+              </div>
+              <h1></h1>
+            </div>
+            <div className="flex justify-between [&_div]:flex ">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </section>
+>>>>>>> fa76f9f80d02c5a2387e00391452dc36c4bf79b1
       </main>
     </>
   )
