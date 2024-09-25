@@ -32,7 +32,7 @@ const HomePage = () => {
         </nav>
         <ParallaxBanner
           layers={[
-            { image: '/banner/smakda-5.webp', speed: -20 },
+            { image: '/banner/smakda-7.webp', speed: -20 },
           ]}
           className="aspect-[2/1] object-top"
         >
@@ -245,7 +245,7 @@ const HomePage = () => {
           <div className="p-20 max-w-screen-2xl w-full mx-auto">
             <main>
 
-              <section className="mb-16 flex flex-col mx-12"> 
+              <section className="mb-16 flex flex-col mx-12">
                 <div className="text-[90px] font-bold ">
                   <h1>
                     Make Your Financial
