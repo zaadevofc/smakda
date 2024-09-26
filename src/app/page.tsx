@@ -39,17 +39,22 @@ const HomePage = () => {
           className="aspect-[2/1] object-top h-screen"
         >
           <div className="absolute bg-gradient-to-t to-transparent from-black/70 inset-0 flex items-center justify-center">
-            <h1 className="text-6xl font-bold mb-4 uppercase text-center text-white">
-              cahaya kehidupan
+            <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
+              BERSAMA
               <br />
-              membangun masa depan
-              <br />
-              <span className="font-serif italic">
-                gemilang</span>
-            </h1>
+              <div className='relative overflow-hidden'>
+                <div className='absolute size-full animate__animated animate__slideInLeft inset-x-0 mx-auto bg-[#5CCDFF] rounded-xl'></div>
+                <h1 className='animate__animated animate__slideInUp px-4 py-1'>
+                  SMKN 2 SUKOHARJO
+                </h1>
+              </div>
+              <h1 className="font-serifs font-semibold -tracking-wider italic">
+                MEMBANGUN NEGERI
+              </h1>
+            </div>
           </div>
         </ParallaxBanner>
-        {/* <section className='w-full fixed inset-x-0 -z-10 mx-auto'>
+        <section className='w-full mx-auto'>
           <div className='max-w-screen-2xl w-full flex flex-col mx-auto py-5s'>
             <div className="relative w-full overflow-hidden max-h-[500px]">
               <div className="absolute flex inset-0 bg-gradient-to-r from-white/0 via-transparent to-white/0">
@@ -63,7 +68,7 @@ const HomePage = () => {
               </video>
             </div>
           </div>
-        </section> */}
+        </section>
         <section className='w-full border-b grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] bg-white'>
           <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
             <div className="w-full mx-auto p-8">
