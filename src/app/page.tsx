@@ -465,33 +465,33 @@ const HomePage = () => {
             </div>
           </section>
         </section>
-        <section className='p-10 h-[calc(100vh-4rem)]'>
-          <div className="flex flex-col">
+        <section className='p-10'>
+          <div className="flex flex-col gap-10">
             <div className="flex">
-              <h1 className='font-bold text-5xl'>Become The Trust Of Users In The World.</h1>
-              <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam reprehenderit accusamus .</h1>
+              <h1 className='font-bold text-6xl w-[60%]'>Become The Trust Of Users In The World.</h1>
+              <h1 className='w-[40%]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam reprehenderit accusamus .</h1>
             </div>
             <div className="flex">
-              <div className="flex flex-col">
-                <div className="flex">
-                  <div className=""></div>
-                  <div className=""></div>
-                  <div className=""></div>
+              <div className="flex flex-col w-[60%]">
+                <div className="flex [&_div]:w-[30%] [&_div]:h-40 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
+                  <div className="bg-green-500">Lorem ipsumaa </div>
+                  <div className="">Lorem ipsumaa</div>
+                  <div className="">Lorem ipsumaa</div>
                 </div>
-                <div className="flex">
-                  <div className=""></div>
-                  <div className=""></div>
-                  <div className=""></div>
+                <div className="flex [&_div]:w-[30%] [&_div]:h-28 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
+                  <div className="">Lorem ipsumaa</div>
+                  <div className="">Lorem ipsumaa</div>
+                  <div className="">Lorem ipsumaa</div>
                 </div>
               </div>
-              <h1></h1>
+              <h1 className='text-5xl text-white p-10 bg-black w-[40%] rounded-xl'>Become The Trust Of Users In The World</h1>
             </div>
-            <div className="flex justify-between [&_div]:flex ">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+            <div className="flex justify-between [&_div]:flex [&_div]:text-2xl">
+              <div>Lorem ipsumaa</div>
+              <div>Lorem ipsumaa</div>
+              <div>Lorem ipsumaa</div>
+              <div>Lorem ipsumaa</div>
+              <div>Lorem ipsumaa</div>
             </div>
           </div>
         </section>
