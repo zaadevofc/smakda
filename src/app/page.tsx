@@ -2,13 +2,13 @@
 
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
-import { useRef } from 'react'
+import { Parallax, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax'
 
 const HomePage = () => {
   return (
     <>
       <main className='min-w-full w-full h-full h-vh mx-auto'>
-        <nav className='fixed inset-x-0 mx-auto top-0 z-50 bg-white/80 backdrop-blur-xl w-full border-b border-gray-300 px-6 py-4'>
+        <nav className='fixed inset-x-0 mx-auto top-0 z-50 bg-white/70 backdrop-blur-xl w-full border-b border-gray-300 px-6 py-4'>
           <div className='flex items-center max-w-screen-2xl w-full mx-auto'>
             <div className='flex items-center gap-2'>
               <img src="/logo-smk.png" alt="" className='size-10' />
@@ -30,27 +30,22 @@ const HomePage = () => {
             </div>
           </div>
         </nav>
-        <ParallaxBanner
-          layers={[
-            { image: '/banner/smakda-8.webp', speed: 40 },
-          ]}
-          className="aspect-[2/1] object-top h-[100vh] rounded-b-[50px]s"
-        >
-          <div className="absolute bg-gradient-to-t to-transparent from-black/70 inset-0 flex items-center justify-center">
-            <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
-              BERSAMA
-              <br />
-              <div className='relative overflow-hidden'>
-                <div className='absolute size-full animate__animated animate__slideInLeft inset-x-0 mx-auto bg-[#5CCDFF] rounded-xl'></div>
-                <h1 className='animate__animated animate__slideInUp px-4 py-1'>
-                  SMKN 2 SUKOHARJO
-                </h1>
+        <ParallaxBanner className='aspect-[2/1] h-lvh'>
+          <ParallaxBannerLayer image='/banner/smakda-7.webp' speed={-10} />
+          <ParallaxBannerLayer>
+            <div className="absolute bg-gradient-to-t to-transparent from-black/80 inset-0 flex items-center justify-center">
+              <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
+                MAJU BERSAMA
+                <br />
+                <div className='relative overflow-hidden'>
+                  <div className='absolute size-full animate__animated animate__slideInLeft inset-x-0 mx-auto bg-gradient-to-l to-[#5cceff34] from-[#5CCDFF] rounded-xl'></div>
+                  <h1 className='animate__animated animate__slideInUp px-4 py-1'>
+                    SMKN 2 SUKOHARJO
+                  </h1>
+                </div>
               </div>
-              <h1 className="font-serifs font-semibold -tracking-wider italic">
-                MEMBANGUN NEGERI
-              </h1>
             </div>
-          </div>
+          </ParallaxBannerLayer>
         </ParallaxBanner>
         <section className='w-full mx-auto hidden'>
           <div className='max-w-screen-2xl w-full flex flex-col mx-auto py-5s'>
@@ -506,12 +501,7 @@ const HomePage = () => {
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
           </div>
-          <div className="w-full flex flex-col">
-            <div className="text-5xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci alias modi iusto delectus </div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
-          </div>
+          <div className="w-full"></div>
         </section>
       </main >
     </>
