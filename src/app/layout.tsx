@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
-import { Montserrat, Oxanium, Titan_One } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { Montserrat, Onest } from "next/font/google";
 import "./globals.css";
 import ProvidersWrapper from "./providers";
-import { cn } from "@/lib/utils";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 //   weight: "100 900",
 // });
 
-const titan_one = Titan_One({
+const titan_one = Onest({
   subsets: ['latin'],
   display: 'swap',
   variable: "--font-titan",
