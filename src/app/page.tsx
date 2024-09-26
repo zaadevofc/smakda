@@ -6,13 +6,6 @@ import { useRef } from 'react'
 import { ParallaxBanner, useParallax } from 'react-scroll-parallax'
 
 const HomePage = () => {
-  const refi = useRef(null) as any
-
-  const { ref: refParallax } = useParallax<HTMLDivElement>({
-    rotate: [0, 360],
-    targetElement: refi
-  });
-
   return (
     <>
       <main className='min-w-full w-full h-full h-vh mx-auto'>
@@ -24,7 +17,7 @@ const HomePage = () => {
                 <h1 className='font-extrabold text-xl animate__animated animate__slideInLeft animate__slow'>SMKN 2 SUKOHARJO</h1>
               </div>
             </div>
-            <div ref={refi} className='flex gap-5 mx-auto'>
+            <div className='flex gap-5 mx-auto'>
               <h1>Beranda</h1>
               <h1>Profil</h1>
               <h1>Jurusan</h1>
