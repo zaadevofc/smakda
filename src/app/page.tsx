@@ -473,12 +473,12 @@ const HomePage = () => {
             </div>
             <div className="flex">
               <div className="flex flex-col w-[60%]">
-                <div className="flex [&_div]:w-[30%] [&_div]:h-40 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
+                <div className="flex [&_div]:w-[30%] [&_div]:h-40 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center  [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
                   <div className="bg-green-500">Lorem ipsumaa </div>
                   <div className="">Lorem ipsumaa</div>
                   <div className="">Lorem ipsumaa</div>
                 </div>
-                <div className="flex [&_div]:w-[30%] [&_div]:h-28 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
+                <div className="flex [&_div]:w-[30%] [&_div]:h-28 [&_div]:text-3xl [&_div]:flex [&_div]:justify-center [&_div]:items-center  [&_div]:m-auto [&_div]:text-center [&_div]:rounded-xl">
                   <div className="">Lorem ipsumaa</div>
                   <div className="">Lorem ipsumaa</div>
                   <div className="">Lorem ipsumaa</div>
