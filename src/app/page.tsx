@@ -5,9 +5,9 @@ import { CDN_URI } from '@/lib/utils'
 import { ParallaxBanner, useParallax } from 'react-scroll-parallax'
 
 const HomePage = () => {
-  const { ref: refParallax } = useParallax<HTMLDivElement>({
-    rotate: [0, 360]
-  });
+  // const { ref: refParallax } = useParallax<HTMLDivElement>({
+  //   rotate: [0, 360]
+  // });
 
   return (
     <>
@@ -44,7 +44,7 @@ const HomePage = () => {
             <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
               BERSAMA
               <br />
-              <div ref={refParallax} className='relative overflow-hidden'>
+              <div className='relative overflow-hidden'>
                 <div className='absolute size-full animate__animated animate__slideInLeft inset-x-0 mx-auto bg-[#5CCDFF] rounded-xl'></div>
                 <h1 className='animate__animated animate__slideInUp px-4 py-1'>
                   SMKN 2 SUKOHARJO
