@@ -3,7 +3,6 @@
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
 import { useRef } from 'react'
-import { ParallaxBanner, useParallax } from 'react-scroll-parallax'
 
 const HomePage = () => {
   const refi = useRef(null) as any
@@ -514,7 +513,12 @@ const HomePage = () => {
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
           </div>
-          <div className="w-full"></div>
+          <div className="w-full flex flex-col">
+            <div className="text-5xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci alias modi iusto delectus </div>
+            <div className=""></div>
+            <div className=""></div>
+            <div className=""></div>
+          </div>
         </section>
       </main >
     </>
