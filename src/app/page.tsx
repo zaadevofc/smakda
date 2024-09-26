@@ -2,12 +2,16 @@
 
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
+import { useRef } from 'react'
 import { ParallaxBanner, useParallax } from 'react-scroll-parallax'
 
 const HomePage = () => {
-  // const { ref: refParallax } = useParallax<HTMLDivElement>({
-  //   rotate: [0, 360]
-  // });
+  const refi = useRef(null) as any
+
+  const { ref: refParallax } = useParallax<HTMLDivElement>({
+    rotate: [0, 360],
+    targetElement: refi
+  });
 
   return (
     <>
@@ -20,7 +24,7 @@ const HomePage = () => {
                 <h1 className='font-extrabold text-xl animate__animated animate__slideInLeft animate__slow'>SMKN 2 SUKOHARJO</h1>
               </div>
             </div>
-            <div className='flex gap-5 mx-auto'>
+            <div ref={refi} className='flex gap-5 mx-auto'>
               <h1>Beranda</h1>
               <h1>Profil</h1>
               <h1>Jurusan</h1>
@@ -36,9 +40,9 @@ const HomePage = () => {
         </nav>
         <ParallaxBanner
           layers={[
-            { image: '/banner/smakda-7.webp', speed: -20 },
+            { image: '/banner/smakda-8.webp', speed: 40 },
           ]}
-          className="aspect-[2/1] object-top h-[100vh] rounded-b-[50px]"
+          className="aspect-[2/1] object-top h-[100vh] rounded-b-[50px]s"
         >
           <div className="absolute bg-gradient-to-t to-transparent from-black/70 inset-0 flex items-center justify-center">
             <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
