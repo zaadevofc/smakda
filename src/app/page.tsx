@@ -502,6 +502,16 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+        <section className='flex gap-6 w-fit'>
+          <div className="relative grid grid-cols-2 !gap-0 w-full h-full">
+            <div className="absolute size-[265px] bg-black m-auto inset-0 -z-10"></div>
+            <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
+            <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
+            <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
+            <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
+          </div>
+          <div className="w-full"></div>
+        </section>
       </main >
     </>
   )
