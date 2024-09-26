@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
-import { Montserrat, Oxanium, Onest } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { Montserrat, Onest } from "next/font/google";
 import "./globals.css";
 import ProvidersWrapper from "./providers";
-import { cn } from "@/lib/utils";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",

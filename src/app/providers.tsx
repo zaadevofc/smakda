@@ -1,9 +1,9 @@
 'use client'
 
-import React from 'react'
 import { ReactLenis } from "@studio-freight/react-lenis";
-import { ParallaxProvider } from 'react-scroll-parallax';
 import 'animate.css';
+import React from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const lenis = {
   lerp: 0.1,

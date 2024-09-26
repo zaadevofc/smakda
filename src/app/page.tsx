@@ -2,11 +2,13 @@
 
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax'
-import Image from 'next/image'
-import { ArrowUpRight } from 'lucide-react'
+import { ParallaxBanner, useParallax } from 'react-scroll-parallax'
 
 const HomePage = () => {
+  const { ref: refParallax } = useParallax<HTMLDivElement>({
+    rotate: [0, 360]
+  });
+
   return (
     <>
       <main className='min-w-full w-full h-full h-vh mx-auto'>
@@ -36,13 +38,13 @@ const HomePage = () => {
           layers={[
             { image: '/banner/smakda-7.webp', speed: -20 },
           ]}
-          className="aspect-[2/1] object-top h-screen"
+          className="aspect-[2/1] object-top h-[100vh] rounded-b-[50px]"
         >
           <div className="absolute bg-gradient-to-t to-transparent from-black/70 inset-0 flex items-center justify-center">
             <div className="text-6xl font-bold mb-4 uppercase text-center text-white">
               BERSAMA
               <br />
-              <div className='relative overflow-hidden'>
+              <div ref={refParallax} className='relative overflow-hidden'>
                 <div className='absolute size-full animate__animated animate__slideInLeft inset-x-0 mx-auto bg-[#5CCDFF] rounded-xl'></div>
                 <h1 className='animate__animated animate__slideInUp px-4 py-1'>
                   SMKN 2 SUKOHARJO
@@ -54,7 +56,7 @@ const HomePage = () => {
             </div>
           </div>
         </ParallaxBanner>
-        <section className='w-full mx-auto'>
+        <section className='w-full mx-auto hidden'>
           <div className='max-w-screen-2xl w-full flex flex-col mx-auto py-5s'>
             <div className="relative w-full overflow-hidden max-h-[500px]">
               <div className="absolute flex inset-0 bg-gradient-to-r from-white/0 via-transparent to-white/0">
