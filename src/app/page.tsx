@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { CDN_URI } from '@/lib/utils'
 import { useRef } from 'react'
+import { ParallaxBanner } from 'react-scroll-parallax'
 
 const HomePage = () => {
   return (
@@ -498,7 +499,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className='flex gap-6 w-fit'>
+        <section className='flex gap-20 w-fit pr-10 pt-20'>
           <div className="relative grid grid-cols-2 !gap-0 w-full h-full">
             <div className="absolute size-[265px] bg-black m-auto inset-0 -z-10"></div>
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
@@ -506,14 +507,69 @@ const HomePage = () => {
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
             <div className='rounded-full border-[25px] border-white overflow-hidden'><img className='rounded-full object-cover size-fit flex-shrink-0' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
           </div>
-          <div className="w-full flex flex-col">
-            <div className="text-5xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci alias modi iusto delectus </div>
-            <div className=""></div>
-            <div className=""></div>
-            <div className=""></div>
+          <div className="w-full flex flex-col gap-10">
+            <div className="text-7xl font-bold">Lorem ipsum dolor sit amet consectetur</div>
+            <div className="flex gap-10">
+              <div className="bg-green-400 rounded-xl p-1 text-5xl font-bold">
+                400 T+
+              </div>
+              <div className="text-5xl font-bold">
+                redy with you
+              </div>
+            </div>
+            <div className="text-2xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quaerat sint quam maiores aperiam
+            </div>
+            <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+              <h1>looking for a Financial</h1>
+              <h1>^</h1>
+            </div>
           </div>
         </section>
-      </main >
+        <section className='flex gap-32 w-fit pl-32 pr-10 py-20'>
+          <div className="w-full flex flex-col gap-5">
+            <div className="text-7xl font-bold">looking to refinance</div>
+            <div className="text-2xl">
+              Lorem ipsum dolor sit amet consectetur elit. Ab quaerat sint quam maiores aperiam
+            </div>
+            <div className=""> 
+              <div className="flex">
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1>looking for a Financial</h1>
+                </div>
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1> for a </h1>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1>looking for a </h1>
+                </div>
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1>looking a Financial</h1>
+                </div>
+              </div>
+              <div className="flex">
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1>looking Financial</h1>
+                </div>
+                <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
+                  <h1> for a Financial</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative grid grid-cols-2 w-full">
+            <div className="absolute size-[450px] m-auto inset-0"><img className='border-[20px] border-green-400 rounded-full' src="https://zaadevofc.tech/assets/zaadevofc-icon-black-white.png" alt="" /></div>
+            <div className="absolute size-[225px] justify-end">
+              <div className="text-center font-bold w-full h-[56px] bg-black rounded-t-3xl text-white">lorem as</div>
+              <div className="text-center font-bold w-full h-[56px] bg-yellow-200">asajea feas</div>
+              <div className="text-center font-bold w-full h-[56px] bg-green-300">fadakla</div>
+              <div className="text-center font-bold w-full h-[56px] bg-yellow-200 rounded-b-3xl">sdsf asais</div>
+            </div> 
+          </div>
+        </section>
+      </main>
     </>
   )
 }
