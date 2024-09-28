@@ -615,7 +615,7 @@ const HomePage = () => {
             <div className="flex flex-col gap-4">
               <div className="font-bold">deleniti</div>
               <div className="">incidunt</div>
-              <div className="">necessitatibus</div>
+              <div className="">necessitatibusd</div>
             </div>
             <div className="text-white">.</div>
           </div>
