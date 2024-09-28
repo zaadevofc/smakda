@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const SEO = {
   SITE_URL:
     process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://smkn2sukoharjo-zaadevofc.vercel.app/',
-  SITE_TITLE: 'SMKN 2 Sukoharjo | Website Resmi',
+  SITE_TITLE: 'SMK Negeri 2 Sukoharjo | Website Resmi',
   SITE_DESCRIPTION:
     'Bertekad menyiapkan lulusan kompeten yang siap terjun di dunia kerja. Industri yang berkembang sangat pesat, memerlukan dukungan Sumber Daya Manusia yang profesional agar dapat mengimbangi perkembangan teknologi.',
   SITE_AUTHORS: [

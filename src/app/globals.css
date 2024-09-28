@@ -1,3 +1,5 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,7 +17,7 @@
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
-    --primary: 220.9 39.3% 11%;
+    --primary: #5ccdff;
     --primary-foreground: 210 20% 98%;
     --secondary: 220 14.3% 95.9%;
     --secondary-foreground: 220.9 39.3% 11%;
@@ -73,13 +75,36 @@
   body {
     @apply bg-background text-foreground selection:bg-[#5CCDFF] selection:text-white;
   }
-
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 
 @layer utilities {
+  .text-clip {
+    @apply text-transparent bg-clip-text;
+  }
+
+  .text-gradient-primary {
+    @apply text-clip drop-shadow-md bg-gradient-to-bl to-transparent via-primary from-primary;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-tr to-[#5cceff00] from-primary;
+  }
+
+  .video-responsive {
+    overflow: hidden;
+    padding-bottom: 59%;
+    position: relative;
+    height: 0;
+  }
+
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -99,7 +124,13 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent 0deg 90deg, #5cceff54 90deg 180deg, transparent 180deg 270deg, #5cceff3c 270deg 360deg);
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg 90deg,
+      #5cceff54 90deg 180deg,
+      transparent 180deg 270deg,
+      #5cceff3c 270deg 360deg
+    );
     animation: rotate 6s ease-in-out infinite;
   }
 
@@ -110,7 +141,13 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent 0deg 90deg, #5CCDFF 90deg 180deg, transparent 180deg 270deg, #5CCDFF 270deg 360deg);
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg 90deg,
+      #5ccdff 90deg 180deg,
+      transparent 180deg 270deg,
+      #5ccdff 270deg 360deg
+    );
     animation: rotate 6s ease-in-out infinite;
   }
 }
