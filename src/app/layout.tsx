@@ -1,26 +1,14 @@
-import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
-import { Montserrat, Onest } from "next/font/google";
+import type { Metadata } from "next";
+import { Mulish, Montserrat } from "next/font/google";
 import "./globals.css";
 import ProvidersWrapper from "./providers";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-const titan_one = Onest({
+const fredoka = Mulish({
   subsets: ['latin'],
   display: 'swap',
-  variable: "--font-titan",
-  weight: ['400']
+  variable: "--font-fredoka",
+  // weight: ['400']
 });
 
 const montserrat = Montserrat({
@@ -42,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(`antialiased font-montser`, montserrat.className, titan_one.variable, montserrat.variable)}
+        className={cn(`antialiased font-fredoka`, montserrat.className, fredoka.variable, montserrat.variable)}
       >
         <ProvidersWrapper>
           {children}
