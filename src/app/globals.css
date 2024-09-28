@@ -7,18 +7,6 @@
   --foreground: #171717;
 }
 
-@layer utilities {
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    @apply selection:bg-[#5CCDFF] selection:text-white;
-  }
-
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,9 +61,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -85,6 +71,46 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground selection:bg-[#5CCDFF] selection:text-white;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .glow-border {
+    position: relative;
+    overflow: hidden;
+  }
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent 0deg 90deg, #5cceff54 90deg 180deg, transparent 180deg 270deg, #5cceff3c 270deg 360deg);
+    animation: rotate 6s ease-in-out infinite;
+  }
+
+  .glow-border-primary::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent 0deg 90deg, #5CCDFF 90deg 180deg, transparent 180deg 270deg, #5CCDFF 270deg 360deg);
+    animation: rotate 6s ease-in-out infinite;
   }
 }
