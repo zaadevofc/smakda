@@ -532,7 +532,7 @@ const HomePage = () => {
             <div className="text-2xl">
               Lorem ipsum dolor sit amet consectetur elit. Ab quaerat sint quam maiores aperiam
             </div>
-            <div className=""> 
+            <div className="">
               <div className="flex">
                 <div className="text-2xl border-2 w-fit px-2 py-1 flex gap-20 border-black rounded-xl mt-1">
                   <h1>looking for a Financial</h1>
@@ -566,7 +566,58 @@ const HomePage = () => {
               <div className="text-center font-bold w-full h-[56px] bg-yellow-200">asajea feas</div>
               <div className="text-center font-bold w-full h-[56px] bg-green-300">fadakla</div>
               <div className="text-center font-bold w-full h-[56px] bg-yellow-200 rounded-b-3xl">sdsf asais</div>
-            </div> 
+            </div>
+          </div>
+        </section>
+        <section className='flex flex-col px-16 gap-16'>
+          <div className="flex justify-between pl-16 bg-green-500 rounded-xl">
+            <div className="m-4 flex justify-between">
+              <div className="text-5xl w-[45%] ">
+                Lorem ipsum, dolor sit met comsesas
+              </div>
+              <div className="flex flex-col w-[200px]">
+                <div className="font-bold">
+                  judul nih bre
+                </div>
+                <div className="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. aperiam aspernatur earu
+                </div>
+              </div>
+              <div className="size-[200px] border-2 border-black rounded-xl"></div>
+            </div>
+          </div>
+          <div className="flex pl-16 items-start justify-between">
+            <div className="flex flex-col gap-4">
+              <div className="text-5xl font-bold">
+                loremsesa
+              </div>
+              <div className="flex">
+                <div className=""></div>
+                <div className=""></div>
+                <div className=""></div>
+                <div className=""></div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="font-bold">Lorem</div>
+              <div className="">ipsum</div>
+              <div className="">consectetur</div>
+              <div className="">sit</div>
+              <div className="">adipisicing</div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="font-bold">consequuntur</div>
+              <div className="">deleniti</div>
+              <div className="">quibusdam</div>
+              <div className="">consequuntur</div>
+              <div className="">atque</div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="font-bold">deleniti</div>
+              <div className="">incidunt</div>
+              <div className="">necessitatibus</div>
+            </div>
+            <div className="text-white">.</div>
           </div>
         </section>
       </main>
