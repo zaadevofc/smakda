@@ -1,34 +1,35 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const SEO = {
-  SITE_URL: process.env.NODE_ENV === "development" ? 'http://localhost:3000/' : "https://queti.fun/",
-  SITE_TITLE: "Quetifun - Solusi AI untuk Pembuatan Soal yang Mudah dan Cepat!",
+  SITE_URL:
+    process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://smkn2sukoharjo-zaadevofc.vercel.app/',
+  SITE_TITLE: 'SMKN 2 Sukoharjo | Website Resmi',
   SITE_DESCRIPTION:
-    "Quetifun adalah aplikasi AI inovatif yang memudahkan pembuatan soal pilihan ganda dan uraian. Pilih kategori, unggah materi, dan biarkan AI membuatkan soal yang relevan untuk Anda. Efisiensi maksimal untuk guru, dosen, dan lembaga pendidikan!",
+    'Bertekad menyiapkan lulusan kompeten yang siap terjun di dunia kerja. Industri yang berkembang sangat pesat, memerlukan dukungan Sumber Daya Manusia yang profesional agar dapat mengimbangi perkembangan teknologi.',
   SITE_AUTHORS: [
-    { name: "zaadevofc", url: "https://zaadevofc.tech" },
-    { name: "zaadevofc", url: "https://instagram.com/zaadevofc" },
+    { name: 'zaadevofc', url: 'https://zaadevofc.tech' },
+    { name: 'zaadevofc', url: 'https://instagram.com/zaadevofc' },
   ],
-  SITE_CREATOR: "zaadevofc",
-  SITE_CREATOR_EMAIL: "zaadevofc@gmail.com",
-  SITE_CATEGORY: "education",
+  SITE_CREATOR: 'zaadevofc',
+  SITE_CREATOR_EMAIL: 'zaadevofc@gmail.com',
+  SITE_CATEGORY: 'school',
   SITE_KEYWORDS: [
-    "Quetifun",
-    "AI soal",
-    "pembuatan soal",
-    "soal pilihan ganda",
-    "soal uraian",
-    "pendidikan",
-    "edukasi",
-    "AI pendidikan",
-    "edtech",
-    "soal otomatis",
-    "guru",
-    "dosen",
-    "indonesia",
+    'pendidikan',
+    'edukasi',
+    'guru',
+    'indonesia',
+    'smk negeri',
+    'smk negeri 2',
+    'smakda',
+    'smakda sukoharjo',
+    'smkn 2 sukoharjo',
+    'smk 2 sukoharjo',
+    'sekolah adiwiyata',
+    'sekolah',
+    'adiwiyata',
+    'website resmi'
   ],
 };
-
 
 export const METADATA: Metadata = {
   title: {
@@ -48,19 +49,19 @@ export const METADATA: Metadata = {
   openGraph: {
     url: SEO.SITE_URL,
     siteName: SEO.SITE_TITLE,
-    type: "website",
-    countryName: "Indonesia",
+    type: 'website',
+    countryName: 'Indonesia',
     description: SEO.SITE_DESCRIPTION,
     title: SEO.SITE_TITLE,
     emails: SEO.SITE_CREATOR_EMAIL,
-    images: SEO.SITE_URL + "android-chrome-512x512.png",
+    images: SEO.SITE_URL + 'android-chrome-512x512.png',
   },
   twitter: {
     site: SEO.SITE_TITLE,
     title: SEO.SITE_TITLE,
     description: SEO.SITE_DESCRIPTION,
     creator: SEO.SITE_CREATOR,
-    images: SEO.SITE_URL + "android-chrome-512x512.png",
-    card: "summary_large_image",
-  }
+    images: SEO.SITE_URL + 'android-chrome-512x512.png',
+    card: 'summary_large_image',
+  },
 };
