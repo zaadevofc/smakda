@@ -18,6 +18,7 @@ const nextConfig = {
       { hostname: 'cdn.discordapp.com' },
       { hostname: 'ucarecdn.com' },
       { hostname: 'aceternity.com' },
+      { hostname: 'smkn2sukoharjo.sch.id' },
     ],
   },
 };

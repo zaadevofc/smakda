@@ -1,4 +1,4 @@
-import Brand from '@/components/Brand'
+import Brand from '@/components/layers/Brand'
 
 const Loading = () => {
   return (

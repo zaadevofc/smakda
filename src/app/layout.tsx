@@ -1,24 +1,26 @@
-import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
-import { Mulish, Montserrat } from "next/font/google";
-import "./globals.css";
-import ProvidersWrapper from "./providers";
-import { METADATA } from "@/consts";
+/** @format */
+
+import { METADATA } from '@/consts';
+import { cn } from '@/lib/utils';
+import { Montserrat, Mulish } from 'next/font/google';
+import { lazy } from 'react';
+import './globals.css';
+
+const ProvidersWrapper = lazy(() => import('./providers'));
 
 const fredoka = Mulish({
   subsets: ['latin'],
   display: 'swap',
-  variable: "--font-fredoka",
-  // weight: ['400']
+  variable: '--font-fredoka',
 });
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
-  variable: "--font-montserrat",
+  variable: '--font-montserrat',
 });
 
-export const metadata = METADATA
+export const metadata = METADATA;
 
 export default function RootLayout({
   children,
@@ -27,12 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(`antialiased font-fredoka`, montserrat.className, fredoka.variable, montserrat.variable)}
-      >
-        <ProvidersWrapper>
-          {children}
-        </ProvidersWrapper>
+      <body className={cn(`antialiased font-fredoka`, montserrat.className, fredoka.variable, montserrat.variable)}>
+        <ProvidersWrapper>{children}</ProvidersWrapper>
       </body>
     </html>
   );

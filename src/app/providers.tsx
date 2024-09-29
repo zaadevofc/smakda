@@ -7,7 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 const lenis = {
   lerp: 0.1,
-  duration: 1.5,
+  duration: 1,
   smoothTouch: false,
   infinite: false,
 };
