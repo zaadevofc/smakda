@@ -5,8 +5,7 @@ import { cn } from '@/lib/utils';
 import { Montserrat, Mulish } from 'next/font/google';
 import { lazy } from 'react';
 import './globals.css';
-
-const ProvidersWrapper = lazy(() => import('./providers'));
+import ProvidersWrapper from './providers';
 
 const fredoka = Mulish({
   subsets: ['latin'],
